@@ -2,35 +2,46 @@
     "Identifier": "eos4rta",
     "Slug": "malaria-mmv",
     "Status": "Ready",
-    "Title": "Antimalarial activity (MMV)",
-    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.",
-    "Mode": "In-house",
-    "Task": [
-        "Classification"
-    ],
+    "Title": "Antimalarial activity (MMV Data)",
+    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.\n",
+    "Source": "Local",
+    "Source Type": "Internal",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Malaria"
+    ],
+    "Target Organism": [
+        "Plasmodium falciparum"
+    ],
     "Output": [
         "Probability"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
-    "Interpretation": "Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and percentage of inhibition (50%, measured by LDH and Lum)",
+    "Output Dimension": 2,
+    "Output Consistency": "Fixed",
+    "Interpretation": "Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%, measured by LDH and Lum)",
     "Tag": [
         "Malaria",
         "P.falciparum",
         "IC50"
     ],
     "Publication": "https://ersilia.io",
+    "Publication Type": "Other",
+    "Publication Year": 2023,
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip",
+    "License": "GPL-3.0-or-later",
+    "Contributor": "GemmaTuron",
+    "Incorporation Date": "2023-08-24",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4rta",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip",
+    "Deployment": [
+        "Local"
     ]
 }
