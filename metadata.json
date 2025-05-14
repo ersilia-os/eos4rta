@@ -3,21 +3,18 @@
     "Slug": "malaria-mmv",
     "Status": "Ready",
     "Title": "Antimalarial activity (MMV Data)",
-    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.\n",
+    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "Internal",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Malaria"
-    ],
-    "Target Organism": [
-        "Plasmodium falciparum"
-    ],
     "Output": [
         "Probability"
     ],
@@ -29,19 +26,24 @@
         "P.falciparum",
         "IC50"
     ],
-    "Publication": "https://ersilia.io",
+    "Biomedical Area": [
+        "Malaria"
+    ],
+    "Target Organism": [
+        "Plasmodium falciparum"
+    ],
     "Publication Type": "Other",
     "Publication Year": 2023,
+    "Publication": "https://ersilia.io",
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
     "License": "GPL-3.0-or-later",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-08-24",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4rta",
     "Docker Architecture": [
         "AMD64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 8.0,
+    "Environment Size": 7552.0
 }
