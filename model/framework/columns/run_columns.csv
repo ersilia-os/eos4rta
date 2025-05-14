@@ -1,4 +1,4 @@
 name,type,direction,description
-NF54_IC50_72h_1uM,float,high,Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM
-NF54_50PercInh_LDH,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with LDH
-NF54_50PercInh_LUM,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with luminiscence
+nf54_ic50_72h_1um,float,high,Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM
+nf54_50percinh_ldh,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with LDH
+nf54_50percinh_lum,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with luminiscence

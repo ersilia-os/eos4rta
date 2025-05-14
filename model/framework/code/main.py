@@ -38,6 +38,6 @@ output1, output2, output3 = my_model(smiles_list)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["NF54_IC50_72h_1uM", "NF54_50PercInh_LDH", "NF54_50PercInh_LUM"])  # header with column names
+    writer.writerow(["NF54_IC50_72h_1uM".lower(), "NF54_50PercInh_LDH".lower(), "NF54_50PercInh_LUM".lower()])  # header with column names
     for o1, o2, o3 in zip(output1, output2, output3):
         writer.writerow([o1, o2, o3])
