@@ -41,9 +41,13 @@
     "Incorporation Date": "2023-08-24",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4rta",
-    "Docker Architecture": [
-        "AMD64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 8.0,
-    "Environment Size": 7552.0
+    "Environment Size": 7552.0,
+    "Image Size": 7404.71,
+    "Computational Performance 1": 35.92,
+    "Computational Performance 2": 25.93,
+    "Computational Performance 3": 26.15,
+    "Computational Performance 4": 120.68,
+    "Computational Performance 5": 555.18
 }
