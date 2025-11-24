@@ -1,8 +1,9 @@
 # Antimalarial activity (MMV Data)
 
-Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.
+Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition over a large dataset and IC50 measured on a subset of molecules extracted from the whole cell inhibition assay. 5-fold crossvalidation of the models shows AUROC>0.70 in all models.
 
 This model was incorporated on 2023-08-24.
+
 
 ## Information
 ### Identifiers
@@ -21,16 +22,17 @@ This model was incorporated on 2023-08-24.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `2`
+- **Output Dimension:** `4`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%, measured by LDH and Lum)
+- **Interpretation:** Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%)
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| nf54_ic50_72h_1um | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM |
-| nf54_50percinh_ldh | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with LDH |
-| nf54_50percinh_lum | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured with luminiscence |
+| ic50_nf54_ldh_72h_1uM | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by LDH |
+| ic50_nf54_lum_72h_1uM | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by luminiscence |
+| perc_nf54_ldh_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by LDH |
+| perc_nf54_lum_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by luminiscence |
 
 
 ### Source and Deployment
