@@ -3,7 +3,7 @@
     "Slug": "malaria-mmv",
     "Status": "Ready",
     "Title": "Antimalarial activity (MMV Data)",
-    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition (with luminescence and LDH) and IC50. 5-fold crossvalidation of the models shows AUROC>0.75 in all models.",
+    "Description": "Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition over a large dataset and IC50 measured on a subset of molecules extracted from the whole cell inhibition assay. 5-fold crossvalidation of the models shows AUROC>0.70 in all models.",
     "Deployment": [
         "Local"
     ],
@@ -18,9 +18,9 @@
     "Output": [
         "Score"
     ],
-    "Output Dimension": 2,
+    "Output Dimension": 4,
     "Output Consistency": "Fixed",
-    "Interpretation": "Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%, measured by LDH and Lum)",
+    "Interpretation": "Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%)",
     "Tag": [
         "Malaria",
         "P.falciparum",
