@@ -2,8 +2,7 @@
 
 Prediction of the in vitro antimalarial potential of small molecules. This model has been developed by Ersilia thanks to experimental data provided by MMV. The model provides the probability of inhibition of the malaria parasite (NF54) measured both as percentage of inhibition over a large dataset and IC50 measured on a subset of molecules extracted from the whole cell inhibition assay. 5-fold crossvalidation of the models shows AUROC>0.70 in all models.
 
-This model was incorporated on 2023-08-24.
-
+This model was incorporated on 2023-08-24.Last packaged on 2025-11-24.
 
 ## Information
 ### Identifiers
@@ -39,18 +38,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4rta](https://hub.docker.com/r/ersiliaos/eos4rta)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `146`
 - **Environment Size (Mb):** `7610`
-- **Image Size (Mb):** `7404.71`
+- **Image Size (Mb):** `7767.58`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.92`
-- 100 inputs: `26.15`
-- 10000 inputs: `555.18`
+- 10 inputs: `42.05`
+- 100 inputs: `61.83`
+- 10000 inputs: `915.44`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
