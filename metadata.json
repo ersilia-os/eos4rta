@@ -22,8 +22,7 @@
     "Output Consistency": "Fixed",
     "Interpretation": "Probability of inhibiting the malaria parasite (strain NF54) in IC50 (threshold 1uM) and single point inhibition (50%)",
     "Tag": [
-        "Malaria",
-        "P.falciparum",
+        "Antiparasitic activity",
         "IC50"
     ],
     "Biomedical Area": [
