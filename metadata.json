@@ -1,7 +1,7 @@
 {
     "Identifier": "eos4rta",
     "Slug": "malaria-mmv",
-    "Status": "Ready",
+    "Status": "In maintenance",
     "Title": "Antimalarial activity (MMV Data)",
     "Description": "Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain, reporting results from two readouts, a lactate dehydrogenase assay and a luminescence assay, each at a 1 uM threshold. Ersilia built the models on experimental screening data contributed by Medicines for Malaria Venture. Running two independent detection methods on the same biology guards against assay-specific artefacts, so agreement between the outputs is more convincing than either alone.",
     "Deployment": [
