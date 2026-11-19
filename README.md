@@ -28,8 +28,8 @@ This model was incorporated on 2023-08-24.Last packaged on 2025-11-24.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| ic50_nf54_ldh_72h_1uM | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by LDH |
-| ic50_nf54_lum_72h_1uM | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by luminiscence |
+| ic50_nf54_ldh_72h_1um | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by LDH |
+| ic50_nf54_lum_72h_1um | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by luminiscence |
 | perc_nf54_ldh_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by LDH |
 | perc_nf54_lum_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by luminiscence |
 
