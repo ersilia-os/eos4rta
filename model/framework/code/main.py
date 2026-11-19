@@ -33,6 +33,6 @@ header = list(y_preds.keys())
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["ic50_nf54_ldh_72h_1uM", "ic50_nf54_lum_72h_1uM", "perc_nf54_ldh_72h_50", "perc_nf54_lum_72h_50"]) 
+    writer.writerow(["ic50_nf54_ldh_72h_1um", "ic50_nf54_lum_72h_1um", "perc_nf54_ldh_72h_50", "perc_nf54_lum_72h_50"]) 
     for o1, o2, o3, o4 in zip(*(y_preds[m].tolist() for m in header)):
         writer.writerow([o1, o2, o3, o4])
