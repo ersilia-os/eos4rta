@@ -3,7 +3,7 @@
 Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain with four classifiers Ersilia trained with its LazyQSAR package on 72-hour screening data contributed by Medicines for Malaria Venture, one per cut-off and readout, an IC50 below 1 uM and a single-point inhibition of at least 50%, each measured by lactate dehydrogenase and by luminescence. Five-fold cross-validation gave AUROC above 0.70 for all four. Agreement between the two detection methods is more convincing than either alone.
 
 This model was incorporated on 2023-08-24.
-Last packaged on 2025-11-24.
+Last packaged on 2026-11-19.
 
 ## Information
 ### Identifiers
@@ -45,12 +45,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `146`
 - **Environment Size (Mb):** `7554`
-- **Image Size (Mb):** `7767.58`
+- **Image Size (Mb):** `4095.06`
 
 **Computational Performance (seconds):**
-- 10 inputs: `42.05`
-- 100 inputs: `61.83`
-- 10000 inputs: `915.44`
+- 10 inputs: `72.48`
+- 100 inputs: `65.1`
+- 10000 inputs: `702.23`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
