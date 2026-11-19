@@ -2,7 +2,8 @@
 
 Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain with four classifiers Ersilia trained with its LazyQSAR package on 72-hour screening data contributed by Medicines for Malaria Venture, one per cut-off and readout, an IC50 below 1 uM and a single-point inhibition of at least 50%, each measured by lactate dehydrogenase and by luminescence. Five-fold cross-validation gave AUROC above 0.70 for all four. Agreement between the two detection methods is more convincing than either alone.
 
-This model was incorporated on 2023-08-24.Last packaged on 2025-11-24.
+This model was incorporated on 2023-08-24.
+Last packaged on 2025-11-24.
 
 ## Information
 ### Identifiers
@@ -14,7 +15,7 @@ This model was incorporated on 2023-08-24.Last packaged on 2025-11-24.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Malaria`
 - **Target Organism:** `Plasmodium falciparum`
-- **Tags:** `Malaria`, `P.falciparum`, `IC50`
+- **Tags:** `Antiparasitic activity`, `IC50`
 
 ### Input
 - **Input:** `Compound`
