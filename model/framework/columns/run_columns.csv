@@ -1,5 +1,5 @@
 name,type,direction,description
-ic50_nf54_ldh_72h_1um,float,high,Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by LDH
-ic50_nf54_lum_72h_1um,float,high,Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by luminiscence
-perc_nf54_ldh_72h_50,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by LDH
-perc_nf54_lum_72h_50,float,high,Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by luminiscence
+ic50_nf54_ldh_72h_1um_rank,float,high,"Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 at an IC50 cut-off of 1 uM (72 h, lactate dehydrogenase readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
+ic50_nf54_lum_72h_1um_rank,float,high,"Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 at an IC50 cut-off of 1 uM (72 h, luminescence readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
+perc_nf54_ldh_72h_50_rank,float,high,"Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 of at least 50% in a single-point assay at 2 uM (72 h, lactate dehydrogenase readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
+perc_nf54_lum_72h_50_rank,float,high,"Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 of at least 50% in a single-point assay at 2 uM (72 h, luminescence readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."

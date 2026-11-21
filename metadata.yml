@@ -1,0 +1,58 @@
+Identifier: eos4rta
+Slug: malaria-mmv
+Status: Ready
+Title: Antimalarial activity (MMV Data)
+Description: Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54
+  strain with four LazyQSAR classifiers trained by Ersilia on 72-hour screening
+  data from Medicines for Malaria Venture, one per readout (lactate
+  dehydrogenase or luminescence) and cut-off (IC50 below 1 uM, or at least 50%
+  inhibition at 2 uM). Five-fold out-of-fold validation gives AUROC 0.79 and
+  0.72 for the IC50 tasks and 0.89 and 0.91 for the single-point tasks. Outputs
+  are ranks against 50,000 drug-like molecules. Agreement between the two
+  readouts is more convincing than either alone.
+Deployment:
+  - Local
+Source: Local
+Source Type: Internal
+Task: Annotation
+Subtask: Activity prediction
+Input:
+  - Compound
+Input Dimension: 1
+Output:
+  - Score
+Output Dimension: 4
+Output Consistency: Fixed
+Interpretation: Four ranks of predicted Plasmodium falciparum NF54 inhibition (IC50 below 1 uM
+  and 50% single-point, by lactate dehydrogenase and luminescence) against
+  50,000 drug-like molecules; 0.65 is better than 99% of them.
+Tag:
+  - Antiparasitic activity
+  - IC50
+Biomedical Area:
+  - Malaria
+Target Organism:
+  - Plasmodium falciparum
+Publication Type: Other
+Publication Year: 2023
+Publication: https://ersilia.io
+Source Code: https://github.com/ersilia-os/lazy-qsar
+License: GPL-3.0-or-later
+Contributor: GemmaTuron
+Incorporation Date: '2023-08-24'
+Last Packaging Date: '2026-11-19'
+Release: v2.0.0
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rta.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos4rta
+Docker Architecture:
+  - AMD64
+  - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos4rta_v2.sif
+Model Size: 146.0
+Environment Size: 7554.0
+Image Size: 4095.06
+Computational Performance 1: 72.48
+Computational Performance 2: 29.32
+Computational Performance 3: 65.1
+Computational Performance 4: 193.17
+Computational Performance 5: 702.23
