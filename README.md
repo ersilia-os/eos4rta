@@ -1,6 +1,6 @@
 # Antimalarial activity (MMV Data)
 
-Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain with four classifiers Ersilia trained with its LazyQSAR package on 72-hour screening data contributed by Medicines for Malaria Venture, one per cut-off and readout, an IC50 below 1 uM and a single-point inhibition of at least 50%, each measured by lactate dehydrogenase and by luminescence. Five-fold cross-validation gave AUROC above 0.70 for all four. Agreement between the two detection methods is more convincing than either alone.
+Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain with four LazyQSAR classifiers trained by Ersilia on 72-hour screening data from Medicines for Malaria Venture, one per readout (lactate dehydrogenase or luminescence) and cut-off (IC50 below 1 uM, or at least 50% inhibition at 2 uM). Five-fold out-of-fold validation gives AUROC 0.79 and 0.72 for the IC50 tasks and 0.89 and 0.91 for the single-point tasks. Outputs are ranks against 50,000 drug-like molecules. Agreement between the two readouts is more convincing than either alone.
 
 This model was incorporated on 2023-08-24.
 Last packaged on 2026-11-19.
@@ -24,15 +24,15 @@ Last packaged on 2026-11-19.
 ### Output
 - **Output Dimension:** `4`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Four Plasmodium falciparum NF54 inhibition probabilities, IC50 below 1 uM and 50% single-point, by lactate dehydrogenase and luminescence.
+- **Interpretation:** Four ranks of predicted Plasmodium falciparum NF54 inhibition (IC50 below 1 uM and 50% single-point, by lactate dehydrogenase and luminescence) against 50,000 drug-like molecules; 0.65 is better than 99% of them.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| ic50_nf54_ldh_72h_1um | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by LDH |
-| ic50_nf54_lum_72h_1um | float | high | Classification score for Pfalciparum NF54 inhibition based on an IC50 cut-off of 1uM measured by luminiscence |
-| perc_nf54_ldh_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by LDH |
-| perc_nf54_lum_72h_50 | float | high | Classification score for Pfalciparum NF54 inhibition based on a percentage of inhibition at single point cut-off of 50% measured by luminiscence |
+| ic50_nf54_ldh_72h_1um_rank | float | high | Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 at an IC50 cut-off of 1 uM (72 h, lactate dehydrogenase readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| ic50_nf54_lum_72h_1um_rank | float | high | Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 at an IC50 cut-off of 1 uM (72 h, luminescence readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| perc_nf54_ldh_72h_50_rank | float | high | Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 of at least 50% in a single-point assay at 2 uM (72 h, lactate dehydrogenase readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| perc_nf54_lum_72h_50_rank | float | high | Rank score of the compound's predicted inhibition of Plasmodium falciparum NF54 of at least 50% in a single-point assay at 2 uM (72 h, luminescence readout), calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
