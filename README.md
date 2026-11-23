@@ -3,7 +3,7 @@
 Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54 strain with four LazyQSAR classifiers trained by Ersilia on 72-hour screening data from Medicines for Malaria Venture, one per readout (lactate dehydrogenase or luminescence) and cut-off (IC50 below 1 uM, or at least 50% inhibition at 2 uM). Five-fold out-of-fold validation gives AUROC 0.79 and 0.72 for the IC50 tasks and 0.89 and 0.91 for the single-point tasks. Outputs are ranks against 50,000 drug-like molecules. Agreement between the two readouts is more convincing than either alone.
 
 This model was incorporated on 2023-08-24.
-Last packaged on 2026-11-19.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -46,12 +46,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `106`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `4095.06`
+- **Image Size (Mb):** `3293.76`
 
 **Computational Performance (seconds):**
-- 10 inputs: `72.48`
-- 100 inputs: `65.1`
-- 10000 inputs: `702.23`
+- 10 inputs: `33.75`
+- 100 inputs: `29.47`
+- 10000 inputs: `342.1`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
