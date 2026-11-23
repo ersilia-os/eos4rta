@@ -2,14 +2,14 @@ Identifier: eos4rta
 Slug: malaria-mmv
 Status: Ready
 Title: Antimalarial activity (MMV Data)
-Description: Predicts in vitro antimalarial activity against the Plasmodium falciparum NF54
-  strain with four LazyQSAR classifiers trained by Ersilia on 72-hour screening
-  data from Medicines for Malaria Venture, one per readout (lactate
-  dehydrogenase or luminescence) and cut-off (IC50 below 1 uM, or at least 50%
-  inhibition at 2 uM). Five-fold out-of-fold validation gives AUROC 0.79 and
-  0.72 for the IC50 tasks and 0.89 and 0.91 for the single-point tasks. Outputs
-  are ranks against 50,000 drug-like molecules. Agreement between the two
-  readouts is more convincing than either alone.
+Description: Predicts in vitro antimalarial activity against the Plasmodium 
+  falciparum NF54 strain with four LazyQSAR classifiers trained by Ersilia on 
+  72-hour screening data from Medicines for Malaria Venture, one per readout 
+  (lactate dehydrogenase or luminescence) and cut-off (IC50 below 1 uM, or at 
+  least 50% inhibition at 2 uM). Five-fold out-of-fold validation gives AUROC 
+  0.79 and 0.72 for the IC50 tasks and 0.89 and 0.91 for the single-point tasks.
+  Outputs are ranks against 50,000 drug-like molecules. Agreement between the 
+  two readouts is more convincing than either alone.
 Deployment:
   - Local
 Source: Local
@@ -23,9 +23,10 @@ Output:
   - Score
 Output Dimension: 4
 Output Consistency: Fixed
-Interpretation: Four ranks of predicted Plasmodium falciparum NF54 inhibition (IC50 below 1 uM
-  and 50% single-point, by lactate dehydrogenase and luminescence) against
-  50,000 drug-like molecules; 0.65 is better than 99% of them.
+Interpretation: Four ranks of predicted Plasmodium falciparum NF54 inhibition 
+  (IC50 below 1 uM and 50% single-point, by lactate dehydrogenase and 
+  luminescence) against 50,000 drug-like molecules; 0.65 is better than 99% of 
+  them.
 Tag:
   - Antiparasitic activity
   - IC50
